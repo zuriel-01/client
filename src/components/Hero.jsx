@@ -15,9 +15,9 @@ const Hero = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
+  // };
 
   // Handle window resize
   useEffect(() => {
@@ -64,12 +64,12 @@ const Hero = () => {
                 </div>
               ))}
             </div>
-            <button className="carousel-control-prev" onClick={prevSlide}>
+            {/* <button className="carousel-control-prev" onClick={prevSlide}>
               &#10094;
             </button>
             <button className="carousel-control-next" onClick={nextSlide}>
               &#10095;
-            </button>
+            </button> */}
           </div>
         </div>
       ) : (

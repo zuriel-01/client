@@ -120,6 +120,8 @@ body{
     font-size: 25px;
     padding-top: 30px;
     text-align: center;
+    width:40%;
+    margin:0 auto
 }
 
 .choosee {
@@ -161,28 +163,31 @@ body{
 }
 .choosee1:first-child h1{
     text-align: left;
+    font-size: 23px;
 }
 .choosee1 p{
     padding-right: 30px;
-    font-size: 22px;
+    font-size: 17px;
   }
 .choosee1:first-child p{
   padding-right: 30px;
   font-size: 25px;
     text-align: left;
-    font-size: 22px;
+    font-size: 17px;
 }
 .choosee1:last-child h1{
     text-align: right;
+    
 }
 .choosee1 h1{
     font-size: 28px;
+    font-size: 22px;
   }
 .choosee1:last-child p{
     padding: 0;
    padding-left: 100px;
    text-align: right;
-   font-size: 22px;
+   font-size: 17px;
 }
 .flex-container {
     background-color: #027efd;
@@ -359,6 +364,15 @@ margin: 0 auto
         font-size: 18px;
         padding: 0;
     }
+    .paragraph2 {
+        font-family: 'Manrope';
+        font-weight: 300;
+        font-size: 15px;
+        padding-top: 30px;
+        text-align: center;
+        width:80%;
+        margin:0 auto
+    }
     .button2 {
         font-size: 14px;
         padding: 8px 16px;
@@ -468,6 +482,10 @@ margin: 0 auto
     }
     .phoneDown{
         display: block;
+        padding: 20px 0px;
+        margin: 0 auto;
+        width: 380px;
+       
     }
     .dwnld{
         display: none;
@@ -521,7 +539,7 @@ margin: 0 auto
             height: auto;
         }
         
-        .carousel-control-prev,
+        /* .carousel-control-prev,
         .carousel-control-next {
             position: absolute;
             top: 50%;
@@ -534,7 +552,7 @@ margin: 0 auto
             border-radius: 50%;
             font-size: 18px;
             z-index: 10;
-        }
+        } */
         
         .carousel-control-prev {
             left: 10px;

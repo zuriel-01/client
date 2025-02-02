@@ -12,14 +12,9 @@ const Choose = () => {
   return (
     <div className="c1-bg">
         <h1 className="choose1 center ">Why Choose Our App?</h1>
-        <div className="paragraph2 center">
-<<<<<<< HEAD
-            <span><p>We make house hunting simple, convenient</p><p>and stress free</p></span>
-              
-=======
-            <span>We make house hunting simple, convenient </span>
-            <span> and stress free</span>  
->>>>>>> e12f5e03c8ad25d793df91a089f5e8638fd72533
+        <div className="paragraph2 center" style={{}}>
+            <p style={{ }} >We make house hunting simple, convenient,
+             and stress free</p>  
         </div>
         <div className='choosee center'>
             {info.map((index)=>(
