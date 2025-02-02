@@ -2,33 +2,40 @@
 import whychoose1 from '../assets/why-choose-1.png'
 import whychoose2 from '../assets/why-choose-2.png'
 import whychoose3 from '../assets/why-choose-3.png'
+import line from '../assets/Line 14.svg'
 
 const Choose = () => {
+    const info = [{id:1,img:whychoose1, title:"Smart Search", description:"Find exactly what you need with advanced filters for location, budget, property type and more.", alignment:"left"},
+        {id:2, title:"Instant Notification", img:whychoose2,description:"Never miss a new listing with real-time alerts for properties that match your preferences..", alignment:"center"},
+        {id:3, title:"Direct Communication", img:whychoose3,description:"Never miss a new listing with real-time alerts for properties that match your preferences.", alignment:"right"},
+    ]
   return (
     <div className="c1-bg">
         <h1 className="choose1 center ">Why Choose Our App?</h1>
         <div className="paragraph2 center">
-            <span>We make house hunting simple, convenient</span>
+<<<<<<< HEAD
+            <span><p>We make house hunting simple, convenient</p><p>and stress free</p></span>
+              
+=======
+            <span>We make house hunting simple, convenient </span>
             <span> and stress free</span>  
+>>>>>>> e12f5e03c8ad25d793df91a089f5e8638fd72533
         </div>
         <div className='choosee center'>
-            <div className='choosee1'>
-                <img src={whychoose1} alt="" />
-                <p className='choosee_title center'>Smart Search</p>
-                <p className='choosee_body'>Find exactly what you need with advanced filters for location, budget, property type and more.</p>
-            </div>
+            {info.map((index)=>(
+                 <div className='choosee1' key={index.id}>
+                 
+                 <img src={index.img} alt="" />
+                 <div>
+                 <img src={line} alt=""  className='line'/>
+             
+                 <h1 className='choosee_title '>{index.title}</h1>
+                 <p className='choosee_body'>{index.description}</p>
 
-            <div className='choosee1'>
-                <img src={whychoose2} alt="" />
-                <p className='choosee_title center'>Instant Notification</p>
-                <p className='choosee_body'>Never miss a new listing with new time alerts for properties that match your preferences.</p>
-            </div>
-
-            <div className='choosee1'>
-                <img src={whychoose3} alt="" />
-                <p className='choosee_title center' style={{marginTop: '13px'}}>Direct Communication</p>
-                <p className='choosee_body'>Never miss a new listing with new time alerts for properties that match your preferences.</p>
-            </div>
+                 </div>
+             </div>
+            ))}
+           
         </div>
     </div>
   )

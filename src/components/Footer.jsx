@@ -2,11 +2,12 @@
 import image from '../assets/white-logo.png'
 const Footer = () => {
   return (
+    <div style={{background:"black"}}>
     <div className="footer-bg">
 
-        <div className="grid-section">
+        <div className="footer-section">
             <div className='footer1'>
-                <img src={image} alt="" style={{width:'200px' }}/>
+                <img className='footerimage' src={image} alt=""/>
             </div>
             <div style={{marginTop: '30px'}} className='footer-body'>
                 <p href="#">DOWNLOAD</p><br />
@@ -24,6 +25,8 @@ const Footer = () => {
                 <a href="#">Terms of Use</a>
             </div>
         </div>
+    </div>
+    <p className='copyw'>© Copyright 2024 all right reserved</p>
 
     </div>
   )
